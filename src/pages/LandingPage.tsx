@@ -149,7 +149,7 @@ const LandingPage = () => {
       {/* ── Hero ── */}
       <section className="max-w-4xl mx-auto text-center px-6 pt-10 pb-8">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
-          Free Open-Source React &
+          lightweight Open-Source React &
           <br />
           Tailwind CSS <span className="text-orange-500">Animated UI</span> Components
         </h1>
