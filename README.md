@@ -1,6 +1,6 @@
 # AnimateKit UI — Lightweight Open-Source React & Tailwind CSS Animated UI Components
 
-**70+ free, open-source animated React UI components — built with Pure React + Tailwind CSS.**
+**80+ free, open-source animated React UI components — built with Pure React + Tailwind CSS.**
 
 No Framer Motion. No GSAP. No heavy animation libraries. Just clean CSS animations and vanilla React hooks.
 
