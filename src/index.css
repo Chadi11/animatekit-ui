@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 14% 6%;
+    --foreground: 210 20% 92%;
+
+    --card: 220 13% 9%;
+    --card-foreground: 210 20% 92%;
+
+    --popover: 220 13% 9%;
+    --popover-foreground: 210 20% 92%;
+
+    --primary: 24 95% 53%;
+    --primary-foreground: 220 14% 6%;
+
+    --secondary: 220 13% 14%;
+    --secondary-foreground: 210 20% 80%;
+
+    --muted: 220 12% 14%;
+    --muted-foreground: 215 14% 50%;
+
+    --accent: 24 95% 53%;
+    --accent-foreground: 220 14% 6%;
+
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 13% 16%;
+    --input: 220 13% 16%;
+    --ring: 24 95% 53%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 220 14% 8%;
+    --sidebar-foreground: 210 15% 65%;
+    --sidebar-primary: 24 95% 53%;
+    --sidebar-primary-foreground: 220 14% 6%;
+    --sidebar-accent: 220 13% 12%;
+    --sidebar-accent-foreground: 210 20% 92%;
+    --sidebar-border: 220 13% 14%;
+    --sidebar-ring: 24 95% 53%;
+
+    --preview-bg: 220 14% 4%;
+    --code-bg: 220 15% 7%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(220 14% 6%);
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(220 13% 20%);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(220 13% 28%);
+}
+
+/* Circular Text spin */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Shiny Text sweep */
+@keyframes shine-sweep {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Gradient flow */
+@keyframes gradient-flow {
+  0% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+  100% { background-position: 0% center; }
+}
+
+/* Sparkle pop */
+@keyframes sparkle-pop {
+  0% { transform: scale(0) rotate(0deg); opacity: 0; }
+  50% { transform: scale(1) rotate(180deg); opacity: 1; }
+  100% { transform: scale(0) rotate(360deg); opacity: 0; }
+}
+
+/* Glitter flash */
+@keyframes glitter-flash {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.5); opacity: 1; }
+  100% { transform: scale(0); opacity: 0; }
+}
